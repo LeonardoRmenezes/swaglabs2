@@ -1,0 +1,205 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-06T17:01:23.268Z",
+    "end": "2022-04-06T17:01:28.550Z",
+    "duration": 5282,
+    "testsRegistered": 6,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "1a450bea-31ec-4845-a3a5-2b05c6763d97",
+      "title": "",
+      "fullFile": "cypress/fixtures/LoginTest.feature",
+      "file": "cypress/fixtures/LoginTest.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "LoginTest (example #1)",
+              "fullTitle": "Login LoginTest (example #1)",
+              "timedOut": null,
+              "duration": 370,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe 'task' event has not been registered in the plugins file. You must register it before using cy.task()\n\nFix this in your plugins file here:\nC:\\cypress\\swaglabs\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.",
+                "estack": "CypressError: `cy.task('ctrLogFiles')` failed with the following error:\n\nThe 'task' event has not been registered in the plugins file. You must register it before using cy.task()\n\nFix this in your plugins file here:\nC:\\cypress\\swaglabs\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task\n\nBecause this error occurred during a `after all` hook we are skipping all of the remaining tests.\n    at https://www.saucedemo.com/__cypress/runner/cypress_runner.js:162256:80\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:1285:10)",
+                "diff": null
+              },
+              "uuid": "9f0c6319-6405-4e7d-b4ae-ea44fd7357a1",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "LoginTest (example #2)",
+              "fullTitle": "Login LoginTest (example #2)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "01c35446-4495-42cd-b3dc-d28f535d85e3",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "LoginTest (example #3)",
+              "fullTitle": "Login LoginTest (example #3)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "09292f07-d2de-450a-a334-85a5c0954dc5",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "LoginTest (example #4)",
+              "fullTitle": "Login LoginTest (example #4)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6341a0a6-681d-45d8-96f9-cf6fb3717840",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "LoginTest (example #5)",
+              "fullTitle": "Login LoginTest (example #5)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b7ebbb40-f125-4b62-855b-1e4d6a8acb98",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "LoginTest (example #6)",
+              "fullTitle": "Login LoginTest (example #6)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f4129218-18dc-46f5-9aa1-1f6d361afef4",
+              "parentUUID": "b1e4cf77-7e92-4057-80a4-a22f8ed2ea6b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9f0c6319-6405-4e7d-b4ae-ea44fd7357a1"
+          ],
+          "pending": [],
+          "skipped": [
+            "01c35446-4495-42cd-b3dc-d28f535d85e3",
+            "09292f07-d2de-450a-a334-85a5c0954dc5",
+            "6341a0a6-681d-45d8-96f9-cf6fb3717840",
+            "b7ebbb40-f125-4b62-855b-1e4d6a8acb98",
+            "f4129218-18dc-46f5-9aa1-1f6d361afef4"
+          ],
+          "duration": 370,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "files": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

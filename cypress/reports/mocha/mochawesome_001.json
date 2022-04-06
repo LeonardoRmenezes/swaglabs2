@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-04-06T18:42:49.679Z",
+    "end": "2022-04-06T18:43:02.337Z",
+    "duration": 12658,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a500def9-9e73-4292-aa52-f9bf900a2907",
+      "title": "",
+      "fullFile": "cypress/fixtures/MakePurshase.feature",
+      "file": "cypress/fixtures/MakePurshase.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa7ad487-04f3-404a-9b99-ad4f51f9d5f8",
+          "title": "Make Purshase",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add item to cart (example #1)",
+              "fullTitle": "Make Purshase Add item to cart (example #1)",
+              "timedOut": null,
+              "duration": 3456,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "9a07d411-a284-46f1-b70d-6885981a1b61",
+              "parentUUID": "fa7ad487-04f3-404a-9b99-ad4f51f9d5f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remove item from cart (example #1)",
+              "fullTitle": "Make Purshase Remove item from cart (example #1)",
+              "timedOut": null,
+              "duration": 5945,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button#checkout.btn.btn_action.btn_medium.checkout_button>' to be 'hidden'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button#checkout.btn.btn_action.btn_medium.checkout_button>' to be 'hidden'\n    at CartPage.seeHiddenCheckoutButton (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:365:42)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:824:12)\n    at Context.resolveAndRunStepDefinition (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:19266:29)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:18587:35)",
+                "diff": null
+              },
+              "uuid": "e412d186-6e31-4bb3-8be8-30da9756d0e3",
+              "parentUUID": "fa7ad487-04f3-404a-9b99-ad4f51f9d5f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a07d411-a284-46f1-b70d-6885981a1b61"
+          ],
+          "failures": [
+            "e412d186-6e31-4bb3-8be8-30da9756d0e3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9401,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
