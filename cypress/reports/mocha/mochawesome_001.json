@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 1,
-    "start": "2022-04-07T03:42:56.773Z",
-    "end": "2022-04-07T03:43:07.241Z",
-    "duration": 10468,
+    "start": "2022-04-07T04:22:37.131Z",
+    "end": "2022-04-07T04:22:50.069Z",
+    "duration": 12938,
     "testsRegistered": 2,
     "passPercent": 50,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ecce6bd1-30f4-4542-8fc3-2091887205f7",
+      "uuid": "f0b67424-20f2-46f9-b6bf-e9080554edb9",
       "title": "",
       "fullFile": "cypress/fixtures/MakePurshase.feature",
       "file": "cypress/fixtures/MakePurshase.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e5f3c33d-618d-4d08-a38b-cf8b32f1cc94",
+          "uuid": "fa788c8e-caf4-4b11-8f0a-cf30c7affc40",
           "title": "Make Purshase",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Add item to cart (example #1)",
               "fullTitle": "Make Purshase Add item to cart (example #1)",
               "timedOut": null,
-              "duration": 2671,
+              "duration": 3520,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "e8239a93-6183-4ee7-aac7-5db295fc4724",
-              "parentUUID": "e5f3c33d-618d-4d08-a38b-cf8b32f1cc94",
+              "uuid": "c6db67e0-2205-466b-bdc0-7eed9882ab06",
+              "parentUUID": "fa788c8e-caf4-4b11-8f0a-cf30c7affc40",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Remove item from cart (example #1)",
               "fullTitle": "Make Purshase Remove item from cart (example #1)",
               "timedOut": null,
-              "duration": 5546,
+              "duration": 6281,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,22 +69,22 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button#checkout.btn.btn_action.btn_medium.checkout_button>' to be 'hidden'\n    at CartPage.seeHiddenCheckoutButton (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:364:42)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:806:12)\n    at Context.resolveAndRunStepDefinition (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:19248:29)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\fixtures\\MakePurshase.feature:18569:35)",
                 "diff": null
               },
-              "uuid": "599877ee-8b75-4f61-90e9-659a7927f411",
-              "parentUUID": "e5f3c33d-618d-4d08-a38b-cf8b32f1cc94",
+              "uuid": "6d1ce308-7567-44ba-bea3-b85209c55026",
+              "parentUUID": "fa788c8e-caf4-4b11-8f0a-cf30c7affc40",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e8239a93-6183-4ee7-aac7-5db295fc4724"
+            "c6db67e0-2205-466b-bdc0-7eed9882ab06"
           ],
           "failures": [
-            "599877ee-8b75-4f61-90e9-659a7927f411"
+            "6d1ce308-7567-44ba-bea3-b85209c55026"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 8217,
+          "duration": 9801,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

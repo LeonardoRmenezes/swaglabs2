@@ -26,3 +26,4 @@ Para a implementação do projeto foi utilizado os plugins: <br>
   Obrigado pela oportunidade em participar do processo de seleção!
 
    <img src=https://www.saucedemo.com/static/media/Login_Bot_graphic.20658452.png height=60px width=60px>
+:)
